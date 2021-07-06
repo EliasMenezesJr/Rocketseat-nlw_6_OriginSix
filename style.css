@@ -32,12 +32,16 @@ img {
   --text-color: hsl(0 0% 46%);
   --text-color-light: hsl(0 0% 98%);
   --body-color: hsl(0 0% 98%);
+
+  /* fonts */
+  --title-font-size: 1.875rem;
 }
 
 /*==== BASE ==============================*/
 html {
   scroll-behavior: smooth;
 }
+
 body {
   font: 400 1rem "DM Sans", sans-serif;
   color: var(--text-color);
@@ -143,6 +147,10 @@ main {
   color: var(--base-color);
 }
 
+.logo-alt span {
+  color: var(--body-color);
+}
+
 /*==== NAVIGATION ==============================*/
 nav {
   height: var(--header-height);
@@ -159,8 +167,6 @@ nav ul li {
 nav ul li a {
   transition: color 0.3s;
   position: relative;
-
-  box-shadow: 0%;
 }
 
 nav ul li a:hover {
@@ -199,10 +205,12 @@ nav .menu ul {
 nav.show .menu {
   opacity: 1;
   visibility: visible;
+
   background: var(--body-color);
 
   height: 100vh;
   width: 100vw;
+
   position: fixed;
   top: 0;
   left: 0;
@@ -295,6 +303,7 @@ nav.show div.icon-close {
 #about {
   background: white;
 }
+
 #about .container {
   margin: 0;
 }
@@ -379,14 +388,14 @@ nav.show div.icon-close {
   position: relative;
   text-indent: 1.875rem;
   margin-bottom: 1.5rem;
-  color: var(--title-color)
+  color: var(--title-color);
 }
 
 #testimonials blockquote p span {
   font: 700 2.5rem serif;
   position: absolute;
-  top : -.475rem;
-  left : -1.875rem;
+  top: -0.475rem;
+  left: -1.875rem;
   color: var(--base-color);
 }
 
@@ -401,7 +410,7 @@ nav.show div.icon-close {
   height: 2rem;
   object-fit: cover;
   clip-path: circle();
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 
 /* swiper */
@@ -411,8 +420,8 @@ nav.show div.icon-close {
 }
 
 .swiper-pagination-bullet {
-  width: .75rem;
-  height: .75rem;
+  width: 0.75rem;
+  height: 0.75rem;
 }
 
 .swiper-pagination-bullet-active {
@@ -431,7 +440,7 @@ nav.show div.icon-close {
 #contact .button i,
 #contact ul li i {
   font-size: 1.5rem;
-  margin-right: .625rem;
+  margin-right: 0.625rem;
 }
 
 #contact ul.grid {
@@ -447,4 +456,26 @@ nav.show div.icon-close {
   color: var(--base-color);
 }
 
-/* aula 3 01:02:40 */
+/* ==== FOOTER ============================== */
+footer {
+  background: var(--base-color);
+}
+
+footer .logo {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+footer .brand p {
+  color: var(--text-color-light);
+  margin-bottom: 0.75em;
+}
+
+footer i {
+  font-size: 1.5em;
+  color: var(--text-color-light);
+}
+
+footer .social a {
+  margin-right: 2rem;
+}

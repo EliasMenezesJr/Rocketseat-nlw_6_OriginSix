@@ -33,13 +33,13 @@ window.addEventListener("scroll", function () {
 
 /* Testimonial carousel slider swiper */
 const swiper = new Swiper('.swiper-container', {
-  slidesPreView: 1,
+  slidesPerView: 1,
   pagination: {
     el: '.swiper-pagination'
   },
   mousewheel: true,
-  Keyboard: true,
-});
+  Keyboard: true
+})
 
 /* ScrollReavel: Mostrar elementos quando der scroll na página */
 const scrollReavel = ScrollReveal({
