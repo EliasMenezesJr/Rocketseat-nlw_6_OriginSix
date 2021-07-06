@@ -503,7 +503,7 @@ footer .social a:hover {
 
   visibility: hidden;
   opacity: 0;
-  
+
   transition: .3s;
   transform: translateY(100%);
 }
@@ -513,3 +513,12 @@ footer .social a:hover {
   opacity: 1;
   transform: translateY(0);
 }
+
+/*====== MEDIA QUERIES ======*/
+/* extra large devices: 1200> */
+/* large devices: 1023 > */
+/* large devices: 992 > */
+@media () {
+
+}
+/* medium devices : 767 > */ 
