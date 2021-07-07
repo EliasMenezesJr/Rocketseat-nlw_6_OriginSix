@@ -39,6 +39,12 @@ const swiper = new Swiper(".swiper-container", {
   },
   mousewheel: true,
   Keyboard: true,
+  breakpoints:{
+    767: {
+      slidesPerView: 2,
+      setWrapperSize: true,
+    }
+  }
 });
 
 /* ScrollReavel: Mostrar elementos quando der scroll na página */
